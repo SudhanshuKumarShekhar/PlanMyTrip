@@ -1,0 +1,13 @@
+.ng-invalid.ng-touched {
+  border-color:red ;
+}
+.error-block{
+  color: red;
+}
+h3{
+  margin-left: 45%;
+  font-family: cursive;
+}
+.card{
+  height: 680px;
+}

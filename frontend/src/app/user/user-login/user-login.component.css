@@ -1,0 +1,10 @@
+h3{
+  margin-left: 45%;
+  font-family: cursive;
+}
+.card{
+  height: 500px;
+}
+mat-label{
+  font-size: larger;
+}

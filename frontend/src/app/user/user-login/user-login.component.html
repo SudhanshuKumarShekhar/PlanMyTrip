@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-6 m-auto">
+    <div class="card m-auto">
+      <div class="card-header">
+        <h3>Login</h3>
+      </div>
+      <div class="card-body" style="margin-top: 5%;">
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+          <div class="form-group col-12">
+            <p>
+              <mat-form-field appearance="outline" style="width: 500px;margin-left: 45px;">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Enter Name" required formControlName="userName">
+                <mat-icon matSuffix>☺</mat-icon>
+              </mat-form-field>
+            </p>
+          </div>
+
+          <div class="form-group col-12">
+            <p>
+              <mat-form-field appearance="outline" style="width: 500px;margin-left: 45px;">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Enter password" required type="password" formControlName="password">
+                <mat-icon matSuffix>☺</mat-icon>
+              </mat-form-field>
+            </p>
+          </div>
+          <div class="form-group col-12">
+            <mat-dialog-actions>
+              <button type="reset" class="btn btn-secondary" style="margin-left: 20%; width: 150px;">Cancel</button>
+              <button class="btn btn-primary" [disabled]="!loginForm.valid" type="submit"
+               style="margin-left: 10%; width: 150px;">Login</button>
+            </mat-dialog-actions>
+          </div>
+        </form>
+        <button type="button" class="btn btn-outline-primary" routerLink="/user/register"
+        style="width: 360px; margin-left: 20%; margin-top: 8%;" >register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
